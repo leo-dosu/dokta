@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./assets/fonts/HelveticaNeue-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./assets/fonts/HelveticaNeue-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./assets/fonts/HelveticaNeue-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./assets/fonts/HelveticaNeue-Light.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./assets/fonts/HelveticaNeue-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./assets/fonts/HelveticaNeue-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+html, body {
+    background-color: #F9F9F9 0% 0% no-repeat padding-box;;
+}
+
+p{
+
+    font-family: 'HelveticaNeue', san-serif;
+    font-weight: 'bold';
+}
