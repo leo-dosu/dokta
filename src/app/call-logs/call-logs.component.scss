@@ -1,0 +1,85 @@
+.call-log{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+
+$attendedColor: #C4EFD8 ;
+$attendedBorder: #30C076;
+$succeededColor: #EFD7BF;
+$succeededBorder: #DD6E00;
+
+.logs-card{
+    width: 312px;
+    height: 109px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    background: $attendedColor 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 12px #B8B8B829;
+    border: 0.5px solid $attendedBorder;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second_logs_card{
+    @extend .logs-card;
+    background: $succeededColor;
+    border: $succeededBorder;
+}
+
+
+.logs-card img{
+    color: #007E3D;
+    height: 40px;
+    width: 40px;
+    padding-left: 10px;
+}
+
+.log-text{
+    padding-right: 10px;
+}
+
+// #table styling
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-table {
+    display: flex;
+    flex-direction: column;
+    width: 1320px;
+    justify-content: center;
+}
+
+.grid-row {
+    display: flex;
+    color: #232629;;
+}
+
+.grid-cell {
+    flex: 1;
+    padding: 5px;
+    border-bottom: 0.5px solid #CCCCCC
+   
+}
+
+
+.grid-row:first-child {
+    background: #0E2689 0% 0% no-repeat padding-box;
+    color: white; /* Text color */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.grid-row:first-child .grid-cell {
+    color: white; 
+}
+.grid-row:hover {
+    background-color: #C4EFD8; 
+}

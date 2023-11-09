@@ -1,29 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <ul class="nav-logo">
-            <li><img src="" alt="Dokta Logo"/></li>
-        </ul>
-        <ul class="nav-links">
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Call Logs</a></li>
-          <li><a href="#">Reports</a></li>
-          <li><a href="#"><img src="" alt="settings icon"/></a></li>
-          <li><a href="#"><img src="" alt="Notification icon"/></a></li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn"><img src="" alt="User Profile icon"/></a>
-            <div class="dropdown-content">
-              <a href="#">Service 1</a>
-              <a href="#">Service 2</a>
-              <a href="#">Service 3</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      
+<nav>
+    <ul class="nav-logo">
+        <li><img src="assets/images/logo2.png" alt="Dokta Logo"/></li>
+    </ul>
+    <ul class="nav-links">
+      <li><a routerLink="/" class="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a></li>
+      <li><a routerLink="/call-logs" routerLinkActive="active">Call Logs</a></li>
+      <li><a routerLink="#" routerLinkActive="active">Reports</a></li>
+      <li class="dropdown"><a routerLink="#"><img src="assets/images/setting.png" alt="settings icon"/></a></li>
+      <li (click)="toggleDropdown($event)" class="dropdown"><a routerLink="#" class="dropdown-toggle"><img src="assets/images/active.png" alt="Notification icon"/></a>
+        <div class="dropdown-2" [ngClass]="{ 'show': showDropdown }">
+          <a href="#">
+            <p>Notification title</p>
+            <p>Notification content</p>
+          </a>
+          <a href="#">
+            <p>Notification title</p>
+            <p>Notification content</p>
+          </a>
+          <a href="#">
+            <p>Notification title</p>
+            <p>Notification content</p>
+          </a>
+      </div>
+      </li>
+      <li class="dropdown">
+        <a routerLink="#" class="">
+          <img class="profile-img" src="assets/images/avatarSmall.png" alt="User Profile icon"/>
+          <span><img src="assets/images/down-arrow.svg" class="" alt/></span>
+        </a>
+        <div class="dropdown-content">
+          <a routerLink="#">Settings</a>
+          <a routerLink="#">Notification</a>
+          <a routerLink="#">Terms & Condition</a>
+          <a routerLink="#">Privacy Policy</a>
+          <a routerLink="#">Signout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>

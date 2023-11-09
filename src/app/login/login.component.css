@@ -18,8 +18,8 @@
 
 .login-form p{
     display: block;
-    font-size: small;
     text-align: center;
+    font: 300 13px/16px 'HelveticaNeue', sans-serif
 }
 
 .login-form a{
@@ -43,8 +43,16 @@
     border: none;
     background-color:#0E2689;
     color: white;
-    font-weight: bold;
+    font: 500 14px/17px 'HelveticaNeue', sans-serif;
     margin-left: 10px; 
+}
+
+.login-form button:hover{
+    top: 584px;
+    left: 492px;
+    width: 156px;
+    height: 46px;
+    opacity: 1;
 }
 
 .login-form input, .login-form textarea, .login-form select{
@@ -81,8 +89,8 @@ h6{
   
 /* circleLogo styling start */
 .brand-logo{
-    width: 130px; 
-    height: 130px;
+    width: 128px; 
+    height: 128px;
     overflow: hidden; 
     /* logo posiotion */
     display: flex;
