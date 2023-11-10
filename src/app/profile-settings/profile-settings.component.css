@@ -1,0 +1,68 @@
+.profile-settings {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .profile-card-bio{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 648px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+
+  .profile-card-bio img{
+    width: 86px; /* Adjust size as needed */
+    height: 86px; /* Adjust size as needed */
+    border-radius: 50%; 
+  }
+
+  .setting-card{
+    align-items: center;
+    padding: 20px;
+    width: 648px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 12px 12px 0px 0px;
+    margin-bottom: 20px;    
+  }
+
+  .setting-items{
+    display: flex;
+    align-items: center;   
+  }
+
+  .item-container{
+    margin-right: auto;
+    margin-left: 10px;
+  }
+
+  .item-container p{
+    color: #30C076;
+    font: 300 10px/7px 'HelveticaNeue', sans-serif
+  }
+
+  .item-container h3{
+    font: 500 18px/16px 'HelveticaNeue', sans-serif
+  }
+
+  .grid-section{
+    align-items: center;
+    justify-items: flex-start;
+
+  }
+
+
+  @media (max-width: 600px) {
+    .setting-items {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
+
