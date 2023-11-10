@@ -8,82 +8,43 @@
                     </div>
             </div>
             <div class="second_logs_card">
-                <img src="assets/images/calllog.png" alt="" />
+                <img src="assets/images/in-call.png" alt="" />
                 <div class="log-text">
                 <p>Succeeded Calls</p>
-                <p>23</p>
+                <p>21</p>
                 </div>
             </div>
-            <div class="logs-card">
-                <img src="" alt="" />
+            <div class="third_logs_card">
+                <img src="assets/images/missed.png" alt="" />
                 <div class="log-text">
                 <p>Cancelled Calls</p>
-                <p>23</p>
+                <p>02</p>
                 </div>
             </div>
-            <div class="logs-card">
-                <img src="" alt="" />
+            <div class="fourth-logs_card">
+                <img src="assets/images/schedule.png" alt="" />
                 <div class="log-text">
                 <p>Scheduled Calls</p>
-                <p>23</p>
+                <p>07</p>
                 </div>
             </div>
     </section>
-    <section>
-        <h3>Calls</h3>
-        <div class="container">
-            <div class="grid-table">
-                <div class="grid-row">
-                    <div class="grid-cell"> row 1</div>
-                    <div class="grid-cell"> row 2</div>
-                    <div class="grid-cell"> row 3</div>
-                    <div class="grid-cell"> row 4</div>
-                    <div class="grid-cell"> row 5</div>
-                    <div class="grid-cell"> row 6</div>
-                    <div class="grid-cell"> row 7</div>
-                    <div class="grid-cell"> row 8</div>
-                    <div class="grid-cell"> row 9</div>
-                    <div class="grid-cell"> row 10</div>
-                </div>
-                <div class="grid-row">
-                    <div class="grid-cell"> Column 1</div>
-                    <div class="grid-cell"> Column 2</div>
-                    <div class="grid-cell"> Column 3</div>
-                    <div class="grid-cell"> Column 4</div>
-                    <div class="grid-cell"> Column 5</div>
-                    <div class="grid-cell"> Column 6</div>
-                    <div class="grid-cell"> Column 7</div>
-                    <div class="grid-cell"> Column 8</div>
-                    <div class="grid-cell"> Column 9</div>
-                    <div class="grid-cell"> Column 10</div>
-                </div>
-                <div class="grid-row">
-                    <div class="grid-cell"> Column 1</div>
-                    <div class="grid-cell"> Column 2</div>
-                    <div class="grid-cell"> Column 3</div>
-                    <div class="grid-cell"> Column 4</div>
-                    <div class="grid-cell"> Column 5</div>
-                    <div class="grid-cell"> Column 6</div>
-                    <div class="grid-cell"> Column 7</div>
-                    <div class="grid-cell"> Column 8</div>
-                    <div class="grid-cell"> Column 9</div>
-                    <div class="grid-cell"> Column 10</div>
-                </div>
-                <div class="grid-row">
-                    <div class="grid-cell"> Column 1</div>
-                    <div class="grid-cell"> Column 2</div>
-                    <div class="grid-cell"> Column 3</div>
-                    <div class="grid-cell"> Column 4</div>
-                    <div class="grid-cell"> Column 5</div>
-                    <div class="grid-cell"> Column 6</div>
-                    <div class="grid-cell"> Column 7</div>
-                    <div class="grid-cell"> Column 8</div>
-                    <div class="grid-cell"> Column 9</div>
-                    <div class="grid-cell"> Column 10</div>
+
+        <section class="grid-section">
+            <h3>Calls</h3>
+            <div class="container">
+                <div class="grid-table">
+                    <div class="grid-row">
+                            <div class="grid-cell"> <p>#Call Id</p></div>
+                            <div class="grid-cell"> <p>Patient</p></div>
+                            <div class="grid-cell"><p>Disease</p></div>
+                            <div class="grid-cell"> <p>Date</p></div>
+                            <div class="grid-cell"> <p>Call Status</p></div>
+                            <div class="grid-cell"><p>Duration</p> </div>
+                            <div class="grid-cell"><p>Attachments</p></div>
+                        </div>
+                        <app-call-log-grid [data]="gridData"></app-call-log-grid>
                 </div>
             </div>
-        </div>
-        
-        
-        
-    </section>
+    
+        </section>

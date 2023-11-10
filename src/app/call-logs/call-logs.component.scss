@@ -5,10 +5,15 @@
     margin-top: 20px;
 }
 
+// !! Important variables for the log cards
 $attendedColor: #C4EFD8 ;
 $attendedBorder: #30C076;
 $succeededColor: #EFD7BF;
 $succeededBorder: #DD6E00;
+$cancelledColor: #F6E4E4;
+$cancelledBorder: #D62221;
+$scheduleColor: #DBE2FF; 
+$scheduleBorder: #0E2689; 
 
 .logs-card{
     width: 312px;
@@ -27,8 +32,21 @@ $succeededBorder: #DD6E00;
 .second_logs_card{
     @extend .logs-card;
     background: $succeededColor;
-    border: $succeededBorder;
+    border-color: $succeededBorder;
 }
+
+.third_logs_card{
+    @extend .logs-card;
+    background: $cancelledColor;
+    border-color: $succeededBorder;
+}
+
+.fourth-logs_card{
+    @extend .logs-card;
+    background: $scheduleColor;
+    border-color: $scheduleBorder;
+}
+
 
 
 .logs-card img{
@@ -43,6 +61,14 @@ $succeededBorder: #DD6E00;
 }
 
 // #table styling
+.grid-section{   
+}
+
+.grid-section h3{
+    padding: 5px ;
+    margin: 5px 5px;
+    font: 700 18px/22px 'HelveticaNeue', sans-serif
+}
 
 .container{
     display: flex;
@@ -59,13 +85,14 @@ $succeededBorder: #DD6E00;
 
 .grid-row {
     display: flex;
-    color: #232629;;
+    color: #232629;
 }
 
 .grid-cell {
     flex: 1;
-    padding: 5px;
-    border-bottom: 0.5px solid #CCCCCC
+    padding: 3px;
+    border-bottom: 0.5px solid #CCCCCC;
+   
    
 }
 
@@ -79,7 +106,6 @@ $succeededBorder: #DD6E00;
 
 .grid-row:first-child .grid-cell {
     color: white; 
-}
-.grid-row:hover {
-    background-color: #C4EFD8; 
+    padding: 0px 4px;
+    font: 500 14px/17px 'HelveticaNeue', sans-serif;
 }
