@@ -58,6 +58,10 @@
 
   }
 
+  .item-frame{
+    border: 0.5px solid #DBE5F5; 
+  }
+
 
   @media (max-width: 600px) {
     .setting-items {
