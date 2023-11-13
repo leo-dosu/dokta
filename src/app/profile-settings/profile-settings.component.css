@@ -18,24 +18,26 @@
   }
 
   .profile-card-bio img{
-    width: 86px; /* Adjust size as needed */
-    height: 86px; /* Adjust size as needed */
+    width: 86px; 
+    height: 86px; 
     border-radius: 50%; 
   }
 
   .setting-card{
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     width: 648px;
     background-color: #fff; /* White background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     border-radius: 12px 12px 0px 0px;
-    margin-bottom: 20px;    
+    margin-top: 20px;
   }
 
   .setting-items{
     display: flex;
-    align-items: center;   
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 10px;
   }
 
   .item-container{
@@ -55,9 +57,19 @@
   .grid-section{
     align-items: center;
     justify-items: flex-start;
-
   }
 
+  .item-border-middle{
+    border: 0.5px solid #DBE5F5;
+    opacity: 1;
+  }
+
+  .item-border-end{
+    border: 0.5px solid #DBE5F5;
+    opacity: 1;
+    border-radius: 0px 0px 12px 12px;
+    margin-bottom: 20px;
+  }
 
   @media (max-width: 600px) {
     .setting-items {
@@ -65,4 +77,6 @@
       align-items: flex-start;
     }
 }
+
+
 
