@@ -1,12 +1,15 @@
 <app-navbar></app-navbar>
 <section class="profile-settings">
     <div class="profile-card-bio item-border">
-        <img src="assets/images/avatarBig.png" alt="User profile avatar" class="first-image"/>
-        <div class="profile-card-content">
-            <h3>Dr John Doe</h3>
-            <p> +234 9938 999 000</p>
-            <p>johndoe@dokta.com</p>
+        <div class="profile-info">
+            <img src="assets/images/avatarBig.png" alt="User profile avatar" class="profile-avatar"/>
+            <div class="profile-card-content">
+                <h3>Dr John Doe</h3>
+                <p> +234 9938 999 000</p>
+                <p>johndoe@dokta.com</p>
+            </div>
         </div>
+        <a [routerLink]="['/edit-profile', 'userID']"><img src="assets/images/edit_note.png" alt="edit profile icon" class="profile-edit-icon"/></a>
     </div>
     <div class="setting-card">
         <h2>Account Settings</h2>
