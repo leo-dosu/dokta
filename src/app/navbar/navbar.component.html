@@ -6,7 +6,7 @@
       <li><a routerLink="/" class="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a></li>
       <li><a routerLink="/call-logs" routerLinkActive="active">Call Logs</a></li>
       <li><a routerLink="#" routerLinkActive="active">Reports</a></li>
-      <li class="dropdown"><a routerLink="#"><img src="assets/images/setting.png" alt="settings icon"/></a></li>
+      <li class="dropdown"><a [routerLink]="['/profile-settings', 'userID']" routerLinkActive="active"><img src="assets/images/setting.png" alt="settings icon"/></a></li>
       <li (click)="toggleDropdown($event)" class="dropdown"><a routerLink="#" class="dropdown-toggle"><img src="assets/images/active.png" alt="Notification icon"/></a>
         <div class="dropdown-2" [ngClass]="{ 'show': showDropdown }">
           <a href="#">
@@ -29,7 +29,7 @@
           <span><img src="assets/images/down-arrow.svg" class="" alt/></span>
         </a>
         <div class="dropdown-content">
-          <a routerLink="#">Settings</a>
+          <a [routerLink]="['/profile-settings', 'userID']">Settings</a>
           <a routerLink="#">Notification</a>
           <a routerLink="#">Terms & Condition</a>
           <a routerLink="#">Privacy Policy</a>

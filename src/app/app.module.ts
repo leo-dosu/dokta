@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CallLogsComponent } from './call-logs/call-logs.component';
 import { CallLogGridComponent } from './call-log-grid/call-log-grid.component';
+import { SettingComponent } from './setting/setting.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CallLogGridComponent } from './call-log-grid/call-log-grid.component';
     NavbarComponent,
     DashboardComponent,
     CallLogsComponent,
-    CallLogGridComponent
+    CallLogGridComponent,
+    SettingComponent
   ],
   imports: [
     CommonModule,

@@ -8,9 +8,8 @@ import { CallLogsComponent } from './call-logs/call-logs.component';
 const routes: Routes = [
   {path: '', component: HomeComponent}, 
   {path:'login', component: LoginComponent},
-  {path: 'profile-settings', component: ProfileSettingsComponent},
-  {path: 'call-logs', component: CallLogsComponent}
-
+  {path: 'profile-settings/:userID', component: ProfileSettingsComponent},
+  {path: 'call-logs', component: CallLogsComponent},
 ];
 
 @NgModule({
