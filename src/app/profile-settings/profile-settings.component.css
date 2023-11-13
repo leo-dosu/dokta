@@ -1,13 +1,12 @@
 .profile-settings {
     display: grid;
     justify-content: center;
-    align-items: center;
    
   }
 
   .profile-card-bio{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     padding: 20px;
     width: 648px;
     background-color: #fff; /* White background */
@@ -15,20 +14,40 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 12px;
+    
   }
 
-  .profile-card-bio img{
+  .profile-avatar{
     width: 86px; 
     height: 86px; 
     border-radius: 50%; 
   }
+
+  .profile-card-content{
+    /* margin-right: auto; method a to extend icon to the right*/
+    margin-left: 10px;
+    /* flex: 1;   method b to extend icon to the right*/
+  }
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-edit-icon{
+    margin-left: 10px;
+    width: 24px;
+    height: 28px ;
+  }
+  
+
 
   .setting-card{
     align-items: center;
     padding: 10px 20px;
     width: 648px;
     background-color: #fff; /* White background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1); 
     border-radius: 12px 12px 0px 0px;
     margin-top: 20px;
   }
@@ -57,6 +76,12 @@
   .grid-section{
     align-items: center;
     justify-items: flex-start;
+  }
+
+  .item-border{
+    border: 0.5px solid #DBE5F5;
+    border-radius: 12px;
+    opacity: 1;
   }
 
   .item-border-middle{

@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CallLogsComponent } from './call-logs/call-logs.component';
 import { CallLogGridComponent } from './call-log-grid/call-log-grid.component';
 import { SettingComponent } from './setting/setting.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SettingComponent } from './setting/setting.component';
     DashboardComponent,
     CallLogsComponent,
     CallLogGridComponent,
-    SettingComponent
+    SettingComponent,
+    EditProfileComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<section class="edit-container">
+    <div class="edit-title">
+        <h3>My Profile</h3>
+    </div>
+    <form class="form-container">
+        <div class="edit-sections">
+            <div class="edit-first-layout">
+                <div class="top-layout">
+                    <img src="assets/images/avatarBig.png" alt="" />
+                    <a routerLink="" class="update-pic-button"><p>Change profile pic</p></a>
+                </div>
+                <div class="id-image-card">
+                   <!-- image avatar  -->
+                </div>
+            </div>
+            <div class="edit-second-layout">
+                    <div class="form-group">
+                        <label for="firstName">Full Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="John Doe"  required>
+                    </div>
+                    <div class="form-group">
+                        <label for="EmailId">Email Id</label>
+                        <input type="email" id="EmailId" name="email" placeholder="example@gmail.com" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+238 0098 999 033" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="language">language Spoken</label>
+                        <input type="text" id="language" name="language" placeholder="English" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="national-id">National Id Number</label>
+                        <input type="text" id="national-id" name="national-id" placeholder="9900-9900-2233-3344" required>
+                    </div>
+            </div>
+        </div>
+        <div class="extended-input">
+            <div class="form-group full-width">
+                <label for="medical-id">Medical Licence Number</label>
+                <input type="text" id="medical-id" name="medical-id" placeholder="Medical Licence -id" required>
+            </div>                 
+        </div>
+        <div class="submit-button">
+            <div class="button-group">
+                <a routerLink="" class=""><p class="">Cancel</p></a>
+                <button type="submit">Update</button>
+            </div>
+        </div>
+</form>
+</section>
