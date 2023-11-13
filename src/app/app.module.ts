@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { ProfileSettingsComponent } from './profile-settings/profile-settings.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CallLogsComponent } from './call-logs/call-logs.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     LoginComponent,
     ProfileSettingsComponent,
-    NavbarComponent
+    NavbarComponent,
+    DashboardComponent,
+    CallLogsComponent
   ],
   imports: [
     CommonModule,
