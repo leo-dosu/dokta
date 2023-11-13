@@ -13,6 +13,7 @@ import { CallLogsComponent } from './call-logs/call-logs.component';
 import { CallLogGridComponent } from './call-log-grid/call-log-grid.component';
 import { SettingComponent } from './setting/setting.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
     CallLogsComponent,
     CallLogGridComponent,
     SettingComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    NotificationsComponent
   ],
   imports: [
     CommonModule,
