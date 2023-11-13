@@ -1,0 +1,23 @@
+.grid-table {
+    display: flex;
+    flex-direction: column;
+    width: 1320px;
+    justify-content: center;
+}
+
+.grid-row {
+    display: flex;
+    color: #232629;
+}
+
+.grid-cell {
+    flex: 1;
+    padding: 3px;
+    border-bottom: 0.5px solid #CCCCCC;
+    font: 300 14px/17px 'HelveticaNeue', sans-serif;
+    color:  #232629;;
+}
+
+.grid-row:hover {
+    background-color: #C4EFD8; 
+}

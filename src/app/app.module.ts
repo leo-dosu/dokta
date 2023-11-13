@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CallLogsComponent } from './call-logs/call-logs.component';
+import { CallLogGridComponent } from './call-log-grid/call-log-grid.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CallLogsComponent } from './call-logs/call-logs.component';
     ProfileSettingsComponent,
     NavbarComponent,
     DashboardComponent,
-    CallLogsComponent
+    CallLogsComponent,
+    CallLogGridComponent
   ],
   imports: [
     CommonModule,
