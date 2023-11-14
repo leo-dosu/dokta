@@ -66,11 +66,13 @@
 
   .item-container p{
     color: #30C076;
-    font: 300 10px/7px 'HelveticaNeue', sans-serif
+    font: 300 10px/7px 'HelveticaNeue', sans-serif;
   }
 
-  .item-container h3{
-    font: 500 18px/16px 'HelveticaNeue', sans-serif
+  .item-container a{
+    font: 500 18px/16px 'HelveticaNeue', sans-serif;
+    text-decoration: none;
+    color: black;
   }
 
   .grid-section{
