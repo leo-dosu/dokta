@@ -6,6 +6,7 @@ import { ProfileSettingsComponent } from './profile-settings/profile-settings.co
 import { CallLogsComponent } from './call-logs/call-logs.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { NotificationSettingComponent } from './notification-setting/notification-setting.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}, 
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'profile-settings/:userID', component: ProfileSettingsComponent},
   {path: 'edit-profile/:userID', component: EditProfileComponent}, 
   {path: 'call-logs', component: CallLogsComponent},
-  {path: 'notifications', component: NotificationsComponent}, 
+  {path: 'notifications/:userID', component: NotificationsComponent},
+  {path: 'notifications-settings/:userID', component: NotificationSettingComponent } 
 ];
 
 @NgModule({

@@ -1,5 +1,9 @@
 import { Component,Input } from '@angular/core';
 
+interface call_grid{
+
+}
+
 @Component({
   selector: 'app-call-log-grid',
   templateUrl: './call-log-grid.component.html',
