@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
 })
 export class NotificationsComponent {
 
-  isSwitchOn: boolean = false;
-
-  toggleSwitch(): void {
-    this.isSwitchOn = !this.isSwitchOn;
-  }
 
 }
