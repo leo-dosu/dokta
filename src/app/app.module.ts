@@ -15,6 +15,7 @@ import { SettingComponent } from './setting/setting.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { NotificationSettingComponent } from './notification-setting/notification-setting.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NotificationSettingComponent } from './notification-setting/notificatio
     SettingComponent,
     EditProfileComponent,
     NotificationsComponent,
-    NotificationSettingComponent
+    NotificationSettingComponent,
+    ResetPasswordComponent
   ],
   imports: [
     CommonModule,

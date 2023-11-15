@@ -7,14 +7,16 @@ import { CallLogsComponent } from './call-logs/call-logs.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { NotificationSettingComponent } from './notification-setting/notification-setting.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}, 
   {path:'login', component: LoginComponent},
-  {path: 'profile-settings/:userID', component: ProfileSettingsComponent},
-  {path: 'edit-profile/:userID', component: EditProfileComponent}, 
+  {path: 'reset-password', component: ResetPasswordComponent}, 
   {path: 'call-logs', component: CallLogsComponent},
+  {path: 'edit-profile/:userID', component: EditProfileComponent}, 
   {path: 'notifications/:userID', component: NotificationsComponent},
+  {path: 'profile-settings/:userID', component: ProfileSettingsComponent},
   {path: 'notifications-settings/:userID', component: NotificationSettingComponent } 
 ];
 
