@@ -44,12 +44,12 @@ nav {
 
     height: 37px;
     width: 37px;
-    content: url("../../assets/images/avatarSmall.png");
+    content: url("../../../assets/images/avatarSmall.png");
     transition: 0.3s;
   }
 
   .profile-img:hover{
-    content: url("../../assets/images/avatarBluesm.png");
+    content: url("../../../assets/images/avatarBluesm.png");
   }
   /* Dropdown styles */
 .dropdown {

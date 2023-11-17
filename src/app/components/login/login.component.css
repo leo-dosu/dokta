@@ -47,13 +47,16 @@
     margin-left: 10px; 
 }
 
-.login-form button:hover{
+.login-form button:disabled{
+    background-color: #ADBDFF;
+}
+/* .login-form button:hover{
     top: 584px;
     left: 492px;
     width: 156px;
     height: 46px;
     opacity: 1;
-}
+} */
 
 .login-form input, .login-form textarea, .login-form select{
     border: none;

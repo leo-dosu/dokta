@@ -1,0 +1,43 @@
+<nav>
+    <ul class="nav-logo">
+        <li><img src="assets/images/logo2.png" alt="Dokta Logo"/></li>
+    </ul>
+    <ul class="nav-links">
+      <li><a routerLink="./dashboard" class="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a></li>
+      <li><a routerLink="./call-logs" routerLinkActive="active">Call Logs</a></li>
+      <li><a routerLink="#" routerLinkActive="active">Reports</a></li>
+      <li class="dropdown"><a [routerLink]="['./profile-settings', 'userID']" routerLinkActive="active"><img src="assets/images/setting.png" alt="settings icon"/></a></li>
+      <li (click)="toggleDropdown($event)" class="dropdown"><a [routerLink]="['./notifications', 'userID']" class="dropdown-toggle"><img src="assets/images/active.png" alt="Notification icon"/></a>
+        <div class="dropdown-2" [ngClass]="{ 'show': showDropdown }">
+          <a href="#">
+            <p>Notification title</p>
+            <p>Notification content</p>
+          </a>
+          <a href="#">
+            <p>Notification title</p>
+            <p>Notification content</p>
+          </a>
+          <a href="#">
+            <p>Notification title</p>
+            <p>Notification content</p>
+          </a>
+      </div>
+      </li>
+      <li class="dropdown">
+        <a routerLink="#" class="">
+          <img class="profile-img" src="" alt="User Profile icon"/>
+          <span><img src="" class="" alt/></span>
+        </a>
+        <div class="dropdown-content">
+          <a [routerLink]="['./profile-settings', 'userID']">Settings</a>
+          <a [routerLink]="['./notifications-settings', 'userID']">Notification</a>
+          <a routerLink="#">Terms & Condition</a>
+          <a routerLink="#">Privacy Policy</a>
+          <a routerLink="#">Signout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- ../../../../assets/images/logo2.png -->
+  <!-- assets/images/avatarSmall.png -->
+  <!-- assets/images/down-arrow.svg -->
