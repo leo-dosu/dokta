@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs';
 import { Constants } from 'src/app/config/constants';
@@ -18,13 +18,16 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   login(username: string, password: string): Observable <any> {
-    console.log(this.apiUrl)
-    return this.http.post<any>(`${this.apiUrl}/doctor/login`, { username, password }).pipe(
-      
+
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    return this.http.post<any>(`${this.apiUrl}/doctor/login`, { username, password })
+    .pipe(
       tap(response => {
         if (response && response.token) {
           localStorage.setItem(this.tokenKey, response.token);
-          
         }
       })
     );
