@@ -1,0 +1,67 @@
+.report{
+    display: grid;
+    align-items: center;
+    padding: 10px;
+}
+
+.section-a{
+    padding: 10px;
+    margin: 10px;
+}
+
+.section-b{
+    padding: 10px;
+    margin: 10px;
+}
+.top-card{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 15px;
+}
+
+
+.grid-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .grid-item-box{
+    width: 30%; 
+    
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .grid-item{
+    border: 0.5px solid #DBE5F5;
+    opacity: 1;
+    padding: 10px;
+  }
+
+/* the radio button on the grid item  */
+    .radio-container {
+        display: flex;
+    }
+
+    .radio-item {
+        margin-right: 20px; /* Adjust spacing between radio items */
+    }
+
+    .radio-item:last-child {
+        margin-right: 0; /* Remove right margin for the last item */
+    }

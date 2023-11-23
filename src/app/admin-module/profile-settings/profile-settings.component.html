@@ -17,7 +17,7 @@
         <img src="assets/images/notification-small.png" alt="" />
        <div class="item-container">
         <p>Manage</p>
-        <a routerLink="./notifications-settings">
+        <a [routerLink]="['/admin/notifications-settings', 'user.id']">
         <h3>Notification</h3>
         </a>
        </div>
