@@ -1,21 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { ProfileSettingsComponent } from './profile-settings/profile-settings.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { CallLogsComponent } from './call-logs/call-logs.component';
-import { CallLogGridComponent } from './call-log-grid/call-log-grid.component';
-import { SettingComponent } from './setting/setting.component';
-import { EditProfileComponent } from './edit-profile/edit-profile.component';
-import { NotificationsComponent } from './notifications/notifications.component';
-import { NotificationSettingComponent } from './notification-setting/notification-setting.component';
+import { LoginComponent } from './components/login/login.component';
+import { ProfileSettingsComponent } from './admin-module/profile-settings/profile-settings.component';
+import { NavbarComponent } from './admin-module/navbar/navbar.component';
+import { HomeComponent } from './admin-module/home/home.component';
+import { DashboardComponent } from './admin-module/dashboard/dashboard.component';
+import { CallLogsComponent } from './admin-module/call-logs/call-logs.component';
+import { CallLogGridComponent } from './admin-module/call-log-grid/call-log-grid.component';
+import { EditProfileComponent } from './admin-module/edit-profile/edit-profile.component';
+import { NotificationsComponent } from './admin-module/notifications/notifications.component';
+import { NotificationSettingComponent } from './admin-module/notification-setting/notification-setting.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ReportsComponent } from './admin-module/reports/reports.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,16 +32,21 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     DashboardComponent,
     CallLogsComponent,
     CallLogGridComponent,
-    SettingComponent,
     EditProfileComponent,
     NotificationsComponent,
     NotificationSettingComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    ReportsComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule,
+    NoopAnimationsModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

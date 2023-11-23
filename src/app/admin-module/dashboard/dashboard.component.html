@@ -1,0 +1,39 @@
+<ng-container *ngIf="userDataService.userData$ | async as userData">
+<section class="dashboard" >
+    <div class="section-a">
+        <div class="call-card" >
+            <img src="assets/images/recentCall.png" alt="" />
+            <p>No calls in queue</p>
+        </div>
+    </div>
+    <div class="scrollbar">
+      </div>
+    <div class="section-b">
+        <div class="welcome-card">
+            <img src="assets/images/avatarBig.png" alt="" />
+            <div class="welcome-content">
+                <div class="name">
+                    <h3>Welcome</h3>
+                    <h4>Dr. {{userData?.name}}</h4>                     
+                </div>
+                <div class="profile-button">
+                    <p><a href="">View Profile</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="main-card">
+            <img src="assets/images/dashboard-img.png" alt="main dokta dashboard page" />
+            <p>Welcome to </p>
+            <p>Telemedicine centre portal</p>
+        </div>
+    </div> 
+    <div>
+</div>
+</section>
+</ng-container>
+<ng-template #loadingData>
+    <p>Loading user data...</p>
+  </ng-template>
+
+
+
