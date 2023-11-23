@@ -1,4 +1,5 @@
-<section class="dashboard">
+<ng-container *ngIf="userDataService.userData$ | async as userData">
+<section class="dashboard" >
     <div class="section-a">
         <div class="call-card" >
             <img src="assets/images/recentCall.png" alt="" />
@@ -13,7 +14,7 @@
             <div class="welcome-content">
                 <div class="name">
                     <h3>Welcome</h3>
-                    <h4>Dr. John Doe</h4>
+                    <h4>Dr. {{userData?.name}}</h4>                     
                 </div>
                 <div class="profile-button">
                     <p><a href="">View Profile</a></p>
@@ -25,8 +26,14 @@
             <p>Welcome to </p>
             <p>Telemedicine centre portal</p>
         </div>
-    </div>    
+    </div> 
+    <div>
+</div>
 </section>
+</ng-container>
+<ng-template #loadingData>
+    <p>Loading user data...</p>
+  </ng-template>
 
 
 
